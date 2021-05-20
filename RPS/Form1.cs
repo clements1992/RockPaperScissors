@@ -77,6 +77,7 @@ namespace RPS
             CPUScore = 0;
             rounds = 3;
 
+            //this text box will appear - player score + cpu score
             textscore.Text = "Player: " + PlayerScore + " - " + "CPU: " + CPUScore;
 
             PlayerChoice = "none";
@@ -220,7 +221,8 @@ namespace RPS
             startNextRound();
             }
 
-            private void startNextRound()
+            //class for the next round, if the game is over, this will activate
+        private void startNextRound()
         {
             if(gameOver == true)
             {
